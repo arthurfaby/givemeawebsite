@@ -1,0 +1,27 @@
+nav {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  width: 100vw;
+  height: 80px;
+}
+
+.logo {
+  grid-area: 1 / 1 / 2 / 2;
+  border: 1px solid black;
+  border-bottom: 2px solid black;
+}
+
+.navigation {
+  grid-area: 1 / 2 / 2 / 3;
+  border: 1px solid black;
+  border-bottom: 2px solid black;
+}
+
+.info {
+  grid-area: 1 / 3 / 2 / 4;
+  border: 1px solid black;
+  border-bottom: 2px solid black;
+}
