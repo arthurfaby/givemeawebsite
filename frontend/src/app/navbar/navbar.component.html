@@ -1,9 +1,22 @@
 <nav>
   <div class="logo">
-
+    <a routerLink="/home">
+      <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5be01d787b5e5b0001ebb6bb/0x0.png">
+    </a>
   </div>
   <div class="navigation">
-
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a (click)="productSubmenuShow = !productSubmenuShow">Products</a>
+        <div class="products-submenu" [style.display]="productSubmenuShow ? 'grid' : 'none'">
+          <div class="product1"></div>
+          <div class="product2"></div>
+          <div class="product3"></div>
+          <div class="product4"></div>
+        </div>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
   </div>
   <div class="info">
 
